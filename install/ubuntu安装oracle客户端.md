@@ -58,4 +58,21 @@ source /etc/profile
 sqlplus your_username/your_password@555.555.555.555:1521/ORCL
 ```
 
-[@see](https://www.cnblogs.com/colben/p/4135466.html)
+## 修复上下左右键无法使用
+
+```shell
+sudo apt-get install rlwrap
+vim ~/.bashrc
+```
+
+输入以下内容:
+
+```shell
+alias sqlplus='rlwrap sqlplus'
+```
+
+## 参考文档
+
+[Ubuntu14.04搭建Oracle instantClient 11.2.0.4并配置cx_Oracle5.1.2](https://www.cnblogs.com/colben/p/4135466.html)
+
+[关于oracle命令行上下左右键无法使用解决办法](https://blog.csdn.net/weixin_34280237/article/details/92823403)
