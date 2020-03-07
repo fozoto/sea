@@ -34,6 +34,15 @@ vim ~/.sbt/repositories
   ivy-home: /file/repository/sbt
 ```
 
+## idea配置sbt
+
+idea的sbt的VM参数:
+
+```shell
+-Dsbt.override.build.repos=true
+-Dsbt.repository.config=~/.sbt/repositories
+```
+
 ## 修改启动jar
 
 修改/soft/sbt/bin/sbt-launch.jar包的/sbt/sbt.boot.properties

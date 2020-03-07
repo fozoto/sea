@@ -33,4 +33,5 @@
 重置某个消费组的offset
 
 > kafka-consumer-groups.sh --bootstrap-server=localhost:9092 --group console-consumer-3127 --reset-offsets --to-earliest --execute --topic topic1
+> kafka-consumer-groups.sh --bootstrap-server=localhost:9092 --topic topic1 --reset-offsets --to-offset 20000 --group test -execute
 > kafka-console-consumer.sh --bootstrap-server=localhost:9092 --topic topic1 --group console-consumer-3127
